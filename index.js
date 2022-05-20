@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer')
-const generateMarkdown = require('./utils/generateMarkdown.js')
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js');
+const fs = require('fs');
+const readmeData = [];
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
@@ -89,7 +91,7 @@ const questions = () => {
                 }
             },
             when: ({ speclInstructConfirm }) => speclInstructConfirm
-
+            
         },
         // Do you need to give credit to anyone? Y/N
         {
@@ -148,8 +150,25 @@ const questions = () => {
                     return false;
                 }
             }
-        }
+        },
+        {
+            type: 'confirm',
+            name: 'licenseConfirm',
+            message: 'Does your project require any licenses?',
+            default: false
+        },
+        {
+            type: 'checkbox',
+            name: 'licenseInput',
+            message: 'What licenses does your project need?(Check all that apply)',
+            choices: ['Apache', 'Boost', 'BSD', 'MIT', 'Mozilla', 'Perl', 'SIL', 'The Unlicense', 'WTFPL', 'Zlib'],
+            when: ({licenseConfirm}) => licenseConfirm
+          }
     ])
+    .then((answer) => {
+        readmeData.push(answer)
+        console.log(readmeData)
+    })
 };
 
 // TODO: Create a function to write README file
@@ -158,7 +177,9 @@ function writeToFile(fileName, data) { }
 // TODO: Create a function to initialize app
 function init() {
     questions()
- }
+    //.then writeToFile
+    
+}
 
 // Function call to initialize app
 init();
