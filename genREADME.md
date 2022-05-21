@@ -1,24 +1,22 @@
-# asdhadf
+# README-Generator
   ## Description
-  hah
+  It generates a readme file based on the answers given through the terminal.
   
   ## Technologies
-  ahajj
+  javascript, node.js, inquirer package.
 
   ## Challenges
-  alsdjkfas;l
+  I struggled with getting getting the readme generated.
   
   ## Special Instructions
-  asdkl;;asdfjasdf
-  
-  
+  Need to install node.js and the inquirer package from npm. The app is initialized by typing node index into the terminal.
   
   ## License
-  Apache_2.0
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache_2.0)
+  MIT
+  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
   ## Credits
-  a;lsdkfja
+  I reference W3 schools on the Node.js File System Module
 
   ## link to live application
-  aaslkdjfasdklfj
+  https://github.com/JaydenCowley/README-Generator
