@@ -1,5 +1,12 @@
 # README-Generator
-  MIT
+  ## table of contents
+  [Description](README.md/#description)  
+  [Installation](README.md/#installation)  
+  [Usage](README.md/#usage)  
+  [License](README.md/#license)  
+  [Contributing](README.md/#contribution)  
+  [Questions](README.md/#questions)  
+  ## License
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ## Description
   It generates a readme.md file. Using information given by the user through the command-line
