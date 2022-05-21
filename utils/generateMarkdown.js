@@ -2,39 +2,28 @@
 function generateMarkdown(data) {
   return `# ${data.title}
   ## Description
-  ${data.discription}
+  ${data.description}
   
   ## Technologies
   ${data.techInput}
+
+  ## Challenges
+  ${data.challenges}
   
-  Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+  ## Special Instructions
+  ${data.speclInstruct}
   
-  ```bash
-  pip install foobar
-  ```
   
-  ## Usage
-  
-  ```python
-  import foobar
-  
-  # returns 'words'
-  foobar.pluralize('word')
-  
-  # returns 'geese'
-  foobar.pluralize('goose')
-  
-  # returns 'phenomenon'
-  foobar.singularize('phenomena')
-  ```
-  
-  ## Contributing
-  Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-  
-  Please make sure to update tests as appropriate.
   
   ## License
-  [MIT](https://choosealicense.com/licenses/mit/)
+  ${data.licenseInput}
+  
+
+  ## Credits
+  ${data.creditInput}
+
+  ## link to live application
+  ${data.linkInput}
 `;
 }
 

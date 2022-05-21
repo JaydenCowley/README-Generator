@@ -52,7 +52,7 @@ const questions = () => {
         //Some of the challenges you faced and features you hope to implement in the future.
         {
             type: 'input',
-            name: 'techInput',
+            name: 'challenges',
             message: 'What challenges did you face creating this application? (Required)',
             validate: techInput => {
                 if (techInput) {
@@ -161,8 +161,16 @@ const questions = () => {
             type: 'checkbox',
             name: 'licenseInput',
             message: 'What licenses does your project need?(Check all that apply)',
-            choices: ['Apache', 'Boost', 'BSD', 'MIT', 'Mozilla', 'Perl', 'SIL', 'The Unlicense', 'WTFPL', 'Zlib'],
-            when: ({licenseConfirm}) => licenseConfirm
+            choices: ['Apache_2.0', 'Boost_1.0', 'BSD_3--Clause','BSD_2--Clause', 'EPL_1.0', 'GPLv3', 'GPL_v2', 'AGPL_v3', 'FDL_v1.3', 'MIT', 'MPL_2.0', 'Perl', 'SIL', 'The Unlicense', 'WTFPL', 'Zlib'],
+            when: ({licenseConfirm}) => licenseConfirm,
+            validate: techInput => {
+                if (licenseInput) {
+                    return true;
+                } else {
+                    console.log('Please, select one license!')
+                    return false;
+                }
+            }
           }
     ])
     .then((answer) => {
