@@ -6,7 +6,6 @@
 [License](README.md/#license)  
 [Contributing](README.md/#contribution)  
 [Questions](README.md/#questions) 
-  MIT
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   ## Description
   It generates a readme.md file. Using information given by the user through the command-line
