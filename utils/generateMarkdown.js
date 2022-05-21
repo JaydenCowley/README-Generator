@@ -13,11 +13,9 @@ function generateMarkdown(data) {
   ## Special Instructions
   ${data.speclInstruct}
   
-  
-  
   ## License
   ${data.licenseInput}
-  
+  [![License](https://img.shields.io/badge/License-${data.licenseInput}-blue.svg)](https://opensource.org/licenses/${data.licenseInput})
 
   ## Credits
   ${data.creditInput}

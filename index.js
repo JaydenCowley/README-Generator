@@ -163,7 +163,7 @@ const questions = () => {
             message: 'What licenses does your project need?(Check all that apply)',
             choices: ['Apache_2.0', 'Boost_1.0', 'BSD_3--Clause','BSD_2--Clause', 'EPL_1.0', 'GPLv3', 'GPL_v2', 'AGPL_v3', 'FDL_v1.3', 'MIT', 'MPL_2.0', 'Perl', 'SIL', 'The Unlicense', 'WTFPL', 'Zlib'],
             when: ({licenseConfirm}) => licenseConfirm,
-            validate: techInput => {
+            validate: licenseInput => {
                 if (licenseInput) {
                     return true;
                 } else {
