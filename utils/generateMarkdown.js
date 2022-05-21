@@ -27,8 +27,6 @@ function generateMarkdown(data) {
   ## Special Instructions
   ${data.speclInstruct}
 
-  ## Credits
-  ${data.creditInput}
 
   ![Alt text](${data.screenshotInput})
   ## link to live application

@@ -152,21 +152,6 @@ const questions = () => {
             message: 'Do you need to give credit to any resources?',
             default: false
         },
-        // who do you need to give credit too?
-        {
-            type: 'input',
-            name: 'creditInput',
-            message: 'Please list out who you need to give credit to.',
-            validate: creditInput => {
-                if (creditInput) {
-                    return true;
-                } else {
-                    console.log('Please, enter information to give credit to your sources!')
-                    return false;
-                }
-            },
-            when: ({ creditConfirm }) => creditConfirm
-        },
         // would you like to include a screenshot? Y/N
         {
             type: 'confirm',
