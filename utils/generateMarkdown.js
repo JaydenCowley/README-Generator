@@ -17,7 +17,7 @@ function generateMarkdown(data) {
 
   ### Test Instructions
   ${data.testInstruct}
-  
+
   ## Technologies
   ${data.techInput}
 
@@ -33,6 +33,10 @@ function generateMarkdown(data) {
   ![Alt text](${data.screenshotInput})
   ## link to live application
   ${data.linkInput}
+
+  ## Questions
+  [My Github account](https://github.com/${data.githubUserName})
+  [Contact me via email](${data.emailInput})
 `;
 }
 

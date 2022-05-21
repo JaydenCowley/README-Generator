@@ -223,7 +223,34 @@ const questions = () => {
                     return false;
                 }
             }
-          }
+          },
+          {
+            type: 'input',
+            name: 'githubUserName',
+            message: 'Enter your github username.',
+            validate: githubUserName => {
+                if (githubUserName) {
+                    return true;
+                } else {
+                    console.log('Please, enter your Github Username!')
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'emailInput',
+            message: 'Enter your email.',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please, enter email so if people have questions about your application they can contact you!')
+                    return false;
+                }
+            }
+        }
+          
     ])
     .then((answer) => {
         
