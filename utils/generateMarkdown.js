@@ -40,8 +40,8 @@ function generateMarkdown(data) {
   ${data.linkInput}
 
   ## Questions
-  [My Github account](https://github.com/${data.githubUserName})
-  [Contact me via email](${data.emailInput})
+  - [My Github account](https://github.com/${data.githubUserName})
+  - [Contact me via email](${data.emailInput})
 `;
 }
 

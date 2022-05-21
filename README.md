@@ -38,5 +38,5 @@
   https://github.com/JaydenCowley/README-Generator 
 
   ## Questions
-  [My Github account](https://github.com/jaydencowley)
-  [Contact me via email](jcowley16@gmail.com)
+  - [My Github account](https://github.com/jaydencowley)
+  - [Contact me via email](jcowley16@gmail.com)
