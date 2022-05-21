@@ -1,6 +1,13 @@
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ## table of contents
+[Description](ReadMe.md/#description)  
+[Installation](ReadMe.md/#installation)  
+[Usage](ReadMe.md/#usage)  
+[License](ReadMe.md/#license)  
+[Contributing](ReadMe.md/#contributing)  
+[Questions](ReadMe.md/##questions) 
   ${data.licenseInput}
   [![License](https://img.shields.io/badge/License-${data.licenseInput}-blue.svg)](https://opensource.org/licenses/${data.licenseInput})
   ## Description
