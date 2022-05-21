@@ -77,7 +77,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'testInsruct',
-            message: 'please enter any test instructions you have (Required)',
+            message: 'Please enter any test instructions you have (Required)',
             validate: testInsruct => {
                 if (testInsruct) {
                     return true;
@@ -144,13 +144,6 @@ const questions = () => {
             },
             when: ({ speclInstructConfirm }) => speclInstructConfirm
             
-        },
-        // Do you need to give credit to anyone? Y/N
-        {
-            type: 'confirm',
-            name: 'creditConfirm',
-            message: 'Do you need to give credit to any resources?',
-            default: false
         },
         // would you like to include a screenshot? Y/N
         {
