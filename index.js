@@ -35,6 +35,58 @@ const questions = () => {
                 }
             }
         },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Enter any installation instructions need to run the application. (Required)',
+            validate: installation => {
+                if (installation) {
+                    return true;
+                } else {
+                    console.log('Please, enter installation instructions!')
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'How do you use the application? (Required)',
+            validate: usage => {
+                if (usage) {
+                    return true;
+                } else {
+                    console.log('Please, enter a description of what your application does!')
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'please enter any contribution instructions you have (Required)',
+            validate: contribution => {
+                if (contribution) {
+                    return true;
+                } else {
+                    console.log('Please, enter any contribution instructions you have!')
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'testInsruct',
+            message: 'please enter any test instructions you have (Required)',
+            validate: testInsruct => {
+                if (testInsruct) {
+                    return true;
+                } else {
+                    console.log('Please, enter any test instructions you have!')
+                    return false;
+                }
+            }
+        },
         //Why you used the technologies you used?
         {
             type: 'input',
@@ -54,8 +106,8 @@ const questions = () => {
             type: 'input',
             name: 'challenges',
             message: 'What challenges did you face creating this application? (Required)',
-            validate: techInput => {
-                if (techInput) {
+            validate: challenges => {
+                if (challenges) {
                     return true;
                 } else {
                     console.log('Please, enter the challenges you faces creating this application!')
