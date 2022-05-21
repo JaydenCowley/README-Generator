@@ -1,10 +1,10 @@
 # README-Generator
 ## Table of Contents
-[Description](ReadMe.md/#description)  
-[Installation](ReadMe.md/#installation)  
-[Usage](ReadMe.md/#usage)  
-[License](ReadMe.md/#license)  
-[Contributing](ReadMe.md/#contributing)  
+[Description](ReadMe.md/##description)  
+[Installation](ReadMe.md/###installation)  
+[Usage](ReadMe.md/###usage)  
+[License](ReadMe.md/##license)  
+[Contributing](ReadMe.md/###contribution)  
 [Questions](ReadMe.md/##questions) 
   MIT
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
